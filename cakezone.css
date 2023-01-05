@@ -1,0 +1,121 @@
+body{font-size: 15px; font-family: sans-serif;}
+.banner-area{ width: 100%; height: 850px; margin: 0; padding: 0; background-image: url(raecfC.jpg); 
+    background-repeat: no-repeat; background-size: 1220px; }
+.navbar{width: 80%; margin-left: 20px; font-size: 18px;}
+.navbar ul{display:flex; list-style: none; padding: 0;}
+.navbar ul li a{padding: 0 1rem; text-decoration: none; color: rgb(90, 25, 90); margin-left: 20px;}
+.navbar ul li a:hover{color: rgb(204, 37, 59);}
+#menu{
+        position: fixed;
+        top:1rem; left: 1rem;
+        cursor: pointer;
+        font-size: 1.5rem;
+        padding:1rem 1.5rem;
+        display: none;}
+
+
+.container img{border-radius: 50%; margin-left: 20px;}
+h3{font-size: 18px; color: rgb(46, 38, 38); margin-top: 11rem;}
+ul li{font-size: 21px; color: rgb(46, 34, 34);}
+
+
+.about img:hover{color: rgb(100, 99, 98);}
+.about{ width: 100%; max-width: 95%; margin: 0 auto; 
+    display: flex; align-items: center; 
+    justify-content: space-around;}
+
+.about-text h1{margin-left: 1rem; font-size: 75px; color: rgb(102, 101, 100); margin-bottom: 0.5rem;}
+.about-text p{ text-align: justify;  padding: 1rem 2rem 1rem 2rem; margin-left: 1rem;}
+.about .btn{font-size: 14px; color: rgb(9, 11, 146); padding-left: 1rem; margin-left: 2rem;}
+
+
+.product h1{text-align: center; font-size: 40px; border-bottom: 0.3rem solid rgb(184, 182, 182); 
+    color: rgb(124, 122, 122); margin-top: 2rem;}
+.main{
+    display: flex;
+    flex-wrap:wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    
+}
+.product-box{
+        width: 20%;
+        margin: 15px;
+        box-sizing: border-box;
+        float: left;
+        text-align: center;
+        border-radius: 20px;
+        padding-top: 10px;
+        cursor: pointer;
+        box-shadow: 0 14px 28px rgb(54, 54, 54);
+        transition: .4s;
+        background: rgb(230, 226, 226);
+    }
+.product-box:hover{
+        box-shadow: 0 3px 6px #111;
+        transform: translate(0px, -8px);
+    }
+.product-box img{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.product-box h3{
+    text-align: center;
+    color: rgb(8, 3, 22);
+    padding-top: 0 8px;
+}
+.product-box h4{margin-top: 0.5rem;}
+.btn2{margin-top: 8rem; font-size: 18px; color: rgb(175, 0, 0);}
+.design{display:block; gap:1rem; margin-top: 2rem; margin-left: 2rem;}
+.design img{width: 200px; height: 198px; padding: 2rem 2rem 2rem 2rem;}
+
+.feedback{margin-top: 5rem; align-items: center; background-color: rgb(247, 247, 247);
+     width: 100%; height: 700px; text-align: center;}
+.feedback-form h1{font-size: 40px; color: rgb(88, 87, 87); align-items: center; text-align: center; margin-bottom: 5rem;}
+.form1{padding-bottom: 1rem;}
+
+.contact h1{font-size: 30px; color: rgb(7, 0, 39);}
+.contact ol li{font-size: 18px; font-weight: bold;}
+.contact ul li{font-size: 14px;}
+
+footer{text-align: center; background-color: rgb(248, 181, 125); width: 100%; height: 3rem;}
+footer h3{margin-top: 2px;}
+
+
+/*media queries*/ 
+
+
+
+@media (max-width:1500px) {
+    .banner-area{background-size: 1100px;}
+    
+}
+
+@media (max-width:1200px){
+    .banner-area{background-size: 950px;}
+    .about-text h1{font-size: 60px;}
+    .about-text p{width: 100%; margin-right: 3rem;}
+
+}
+@media (max-width:990px) {
+    .banner-area{background-size: 720px;}
+    .navbar ul li a{font-size: 65%;}
+   
+}
+@media (max-width:770px){
+    .banner-area{background-size: 460px;}
+    .navbar{display: none;}
+    #menu{display: block;}
+    .container img{width: 15%; margin-top: 0;}
+    .about{display: inline;}
+    .about img{width: 40%;}
+    .about-text p{font-size: 60%;}
+    .about-text h1{font-size: 80%;}
+    .product-box{display: inline; width: 70%;}
+    
+}
